@@ -18,7 +18,7 @@ def get_player_name():
                 valid_name = True
 
         if not valid_name:
-            print("Please enter a name, rather than leaving it blank.")
+            print("Please enter a name.")
 
     return name
 
@@ -61,8 +61,8 @@ def get_valid_wager(energy_level):
         if candidate <= energy_level:
             valid_wager = True
         else:
-            print("Use a whole number without spaces or leading zeros.")
-            print("The wager cannot be negative or exceed your energy.")
+            print("Use a whole number without spaces or zeros in front.")
+            print("The gambled wager cannot be negative or exceed your energy level :/ .")
 
     return candidate
 

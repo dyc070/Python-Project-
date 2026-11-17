@@ -274,11 +274,11 @@ def guess_number(energy_level, studied):
     if random_number == user_number:
         energy_level = energy_level + (points_gambled * 2)
         print("You guessed Maxim's number and gained",
-              points_gambled * 2, "energy points!")
+              points_gambled * 2, "energy points! :)")
     else:
         energy_level = energy_level - points_gambled
         print("You did not guess Maxim's number and lost",
-              points_gambled, "energy points.")
+              points_gambled, "energy points. :( )")
 
     print("Energy level:", energy_level)
     return energy_level
